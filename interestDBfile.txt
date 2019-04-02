@@ -1,0 +1,14 @@
+SQL> desc interest_tab;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ---------------
+ CUSTNO                                             NUMBER
+ NAME                                               VARCHAR2(10)
+ PRINCIPLE                                          NUMBER(15,4)
+ ROI                                                NUMBER(5,2)
+ PERIOD                                             NUMBER
+ SI                                                 NUMBER(15,4)
+ CI                                                 NUMBER(15,4)
+
+SQL> CREATE SEQUENCE int_seq start with 1001 increment by 1;
+
+Sequence created.
