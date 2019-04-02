@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="dfb" class="com.nt.beans.DateFactoryBean">
+	<constructor-arg value="110"/>
+	<constructor-arg value="01"/>
+	<constructor-arg value="04"/>
+	</bean>
+	
+	<bean id="remainder" class="com.nt.beans.ScheduleRemainder">
+	<property name="dt" ref="dfb"></property>
+	</bean>
+
+</beans>
